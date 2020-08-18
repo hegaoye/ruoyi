@@ -22,6 +22,8 @@ spec:
           env:
             - name: host
               value: "mysql.mysql:3306"
+            - name: database
+              value: "ry"
             - name: username
               value: "root"
             - name: password
