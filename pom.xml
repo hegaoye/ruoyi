@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ruoyi</groupId>
@@ -10,7 +10,7 @@
     <name>ruoyi</name>
     <url>http://www.ruoyi.vip</url>
     <description>若依管理系统</description>
-    
+
     <properties>
         <ruoyi.version>4.3.1</ruoyi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,7 +35,7 @@
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-        
+
             <!-- SpringBoot的依赖配置-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -44,14 +44,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!--阿里数据库连接池 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-            
+
             <!--验证码 -->
             <dependency>
                 <groupId>com.github.penggle</groupId>
@@ -79,7 +79,7 @@
                 <artifactId>shiro-ehcache</artifactId>
                 <version>${shiro.version}</version>
             </dependency>
-    
+
             <!-- thymeleaf模板引擎和shiro框架的整合 -->
             <dependency>
                 <groupId>com.github.theborakompanioni</groupId>
@@ -131,7 +131,7 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
-            
+
             <!--io常用工具类 -->
             <dependency>
                 <groupId>commons-io</groupId>
@@ -166,7 +166,7 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-            
+
             <!-- 定时任务-->
             <dependency>
                 <groupId>com.ruoyi</groupId>
@@ -235,29 +235,52 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>nexus-aliyun</id>-->
+<!--            <name>Nexus aliyun</name>-->
+<!--            <layout>default</layout>-->
+<!--            <url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>spring-snapshots</id>-->
+<!--            <url>http://repo.spring.io/snapshot</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>spring-milestones</id>-->
+<!--            <url>http://repo.spring.io/milestone</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
+<!--    <pluginRepositories>-->
+<!--        <pluginRepository>-->
+<!--            <id>public</id>-->
+<!--            <name>aliyun nexus</name>-->
+<!--            <url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--            <id>spring-snapshots</id>-->
+<!--            <url>http://repo.spring.io/snapshot</url>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--            <id>spring-milestones</id>-->
+<!--            <url>http://repo.spring.io/milestone</url>-->
+<!--        </pluginRepository>-->
+<!--    </pluginRepositories>-->
 
 </project>
